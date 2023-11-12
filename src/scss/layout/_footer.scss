@@ -1,8 +1,20 @@
-// .page__footer {
-//   position: fixed;
-//   left: 0;
-//   bottom: 0;
-//   width: 100vw;
-//   padding: 1rem;
-//   color: $color-secondary;
-// }
+.footer {
+  background-color: #304268;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__div {
+    color: $colorTitle;
+  }
+}
+.nav__list {
+  list-style: none;
+  text-transform: uppercase;
+
+  font-family: $fontMain;
+  font-size: $fontSizeStandard;
+  margin-bottom: 20px;
+  line-height: 2;
+}
