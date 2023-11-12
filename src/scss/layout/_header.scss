@@ -7,6 +7,16 @@
   background-position: center;
   color: white;
 
+  &__burger {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    position: fixed;
+  }
+
   &__title {
     display: flex;
     flex-direction: column;
@@ -18,21 +28,22 @@
 
     &--h1 {
       font-size: 42px;
-      font-family: $font-bold;
+      font-family: $fontTitle;
+      font-weight: $fontWeightTitle;
       text-transform: uppercase;
       text-align: center;
+      line-height: 55px;
       margin-top: 150px;
       margin-bottom: 20px;
 
-      &::first-line {
-        word-spacing: 100vw;
-      }
+      word-spacing: 100vw;
     }
   }
 }
 
 .header__title--span {
-  font-family: $font-main;
+  font-family: $fontMain;
+  font-size: $fontSizeStandard;
 }
 .header__title--button {
   border-radius: 50%;
