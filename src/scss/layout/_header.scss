@@ -6,33 +6,35 @@
   position: relative;
   background-position: center;
   color: white;
-}
-.header-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  width: 100vw;
 
-  font-size: 16px;
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100vw;
+    font-size: 16px;
+
+    &--h1 {
+      font-size: 42px;
+      font-family: $font-bold;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 150px;
+      margin-bottom: 20px;
+
+      &::first-line {
+        word-spacing: 100vw;
+      }
+    }
+  }
 }
 
-.header-title__h1 {
-  font-size: 42px;
-  font-family: "Roboto Slab";
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 150px;
-  margin-bottom: 20px;
+.header__title--span {
+  font-family: $font-main;
 }
-.header-title__h1::first-line {
-  word-spacing: 100vw;
-}
-.header-title__span {
-  font-family: "Roboto";
-}
-.header-title__button {
+.header__title--button {
   border-radius: 50%;
   background-color: blue;
   height: 30px;
