@@ -1,20 +1,52 @@
 .footer {
   background-color: #304268;
+  // padding: 30px 85px 45px 85px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
 
-  &__div {
+  &__arrow {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 15px;
+    top: -20px;
+    background-color: $colorTitle;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+
+  &__div1 {
     color: $colorTitle;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5;
+    margin-top: 45px;
+  
+  }
+  &__div2 {
+    color: $colorTitle;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5;
   }
 }
+
 .nav__list {
   list-style: none;
   text-transform: uppercase;
-
   font-family: $fontMain;
   font-size: $fontSizeStandard;
   margin-bottom: 20px;
   line-height: 2;
+
+  a {
+    color: $colorTitle;
+    text-decoration: none;
+  }
 }
