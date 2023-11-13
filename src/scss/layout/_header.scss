@@ -1,7 +1,7 @@
 .header {
   width: 100vw;
   height: 500px;
-  background-image: url("/images/cover.jpg");
+  background-image: url("../images/cover.jpg");
   background-size: cover;
   position: relative;
   background-position: center;
@@ -24,7 +24,6 @@
     align-items: center;
     height: 500px;
     width: 100vw;
-  
 
     &--h1 {
       font-size: 42px;
@@ -54,11 +53,3 @@
     }
   }
 }
-
-// .header__title--button {
-//   border-radius: 50%;
-//   background-color: blue;
-//   height: 30px;
-//   width: 50px;
-//   margin-top: 15px;
-// }

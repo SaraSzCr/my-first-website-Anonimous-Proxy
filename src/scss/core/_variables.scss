@@ -2,10 +2,13 @@
 
 $fontMain: "Roboto", sans-serif;
 $fontTitle: "Roboto Slab";
+$fontWeightTitle: bold;
+
+//font size
+
 $fontSizeStandard: 16px;
 $fontSizeMain: 18px;
-$fonSizeMainTitle: 24px;
-$fontWeightTitle: bold;
+$fontSizeMainTitle: 24px;
 
 //colors
 
@@ -15,4 +18,6 @@ $colorSecondary: #000000;
 $colorMenu: #0271bc;
 $colorMain: #eff9ff;
 $colorFooter: #304268;
+$colorSpan: #8ccbea;
+$colorParagraph: #4a4a4a;
 
