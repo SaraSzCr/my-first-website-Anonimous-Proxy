@@ -2,11 +2,12 @@
   background-color: $colorTitle;
   // height: 100vh;
   width: 100vw;
-  border: solid salmon;
+
+
 }
 
 .firstSection {
-//  height: 100vh;
+  height: 360px;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -37,12 +38,13 @@
     color: $colorParagraph;
     font-size: $fontSizeMain;
     font-family: $fontMain;
+    font-weight: normal;
     line-height: 1.5;
   }
 
-  &__link{
+  &__link {
     border: 4px solid $colorLink;
-    border-radius: 45%;
+    border-radius: 25px;
     padding: 20px;
     width: 75px;
     height: 45px;
@@ -51,16 +53,14 @@
     justify-content: center;
     margin: 15px;
 
-    &--go{
+    &--go {
       color: $colorLink;
       font-family: $fontMain;
       font-size: 20px;
       text-decoration: none;
     }
-
   }
 }
-
 
 .secondSection {
   width: 100vw;
@@ -68,44 +68,114 @@
   background-color: $colorMain;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20vw 60vw 20vw ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "title"
+    "article1"
+    "article2"
+    "article3"
+    "link";
 
-  &__title{
-    // background-color: aqua;
+  &__title {
     margin: 15px;
+    grid-area: title;
 
-    &--h2{
+    &--h2 {
       font-family: $fontTitle;
       font-size: $fontSizeMainTitle;
       font-weight: $fontWeightTitle;
     }
   }
 
-   &__containerArticles{
-    background-color: coral;
-    margin: 50px;
-
-
-  // }
-  // &__link{
-  //   background-color: blueviolet;
-  // }
-}
-.secondSection__article{
-  &--title{
-    font-family: $fontTitle;
-    font-size: $fontSizeMain;
-    font-weight: $fontWeightTitle;
+  .article1 {
+    grid-area: article1;
+  }
+  .article2 {
+    grid-area: article2;
+  }
+  .article3 {
+    grid-area: article3;
   }
 
-  &--paragraph{
-    font-size: $fontSizeMain;
-    font-family: $fontMain;
-    line-height: 2.5;
+  &__link {
+    grid-area: link;
+  }
 
+  .secondSection__article {
+    &--title {
+      font-family: $fontTitle;
+      font-size: $fontSizeMain;
+      font-weight: $fontWeightTitle;
+    }
+
+    &--paragraph {
+      font-size: $fontSizeMain;
+      font-family: $fontMain;
+      line-height: 2.5;
+    }
   }
 }
-} 
 
-  
+// Tablet
+@media (min-width: 768px) and (max-width: 1280px) {
+  .secondSection {
+    height: 400px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "title title title"
+      "article1 article2 article3"
+      "link link link";
 
+    &__title {
+      margin: 15px;
+      grid-area: title;
+    }
+    .article1 {
+      grid-area: article1;
+    }
+    .article2 {
+      grid-area: article2;
+    }
+    .article3 {
+      grid-area: article3;
+    }
+    &__link {
+      grid-area: link link link;
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 1280px) {
+  .secondSection {
+    height: 400px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "title title title"
+      "article1 article2 article3"
+      "link link link";
+
+    &__title {
+      margin: 15px;
+      grid-area: title;
+    }
+    .article1 {
+      grid-area: article1;
+    }
+    .article2 {
+      grid-area: article2;
+    }
+    .article3 {
+      grid-area: article3;
+    }
+    &__link {
+      grid-area: link link link;
+    }
+  }
+}
