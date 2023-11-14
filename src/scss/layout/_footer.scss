@@ -19,6 +19,8 @@
     align-items: center;
     justify-content: center;
     position: absolute;
+    animation-name: jump;
+    animation-duration: 4s;
   }
 
   &__div1 {
@@ -54,7 +56,21 @@
   }
 }
 
-//Tablet
+// Animacion
+
+@keyframes jump {
+  from {
+    margin-left: 10%;
+    width: 20%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 0%;
+  }
+}
+
+// Tablet
 
 @media (min-width: 768px) and (max-width: 1280px) {
   .footer {

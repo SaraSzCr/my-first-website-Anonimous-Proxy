@@ -49,6 +49,17 @@
     align-items: center;
     justify-content: center;
     margin: 15px;
+    transition-property: border;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+
+    &:hover {
+      border: 4px solid $colorTitle;
+      background-color: #ffddc8;
+    }
 
     &--go {
       color: $colorLink;
@@ -124,6 +135,13 @@
     margin: 15px;
     display: grid;
     align-items: center;
+    transition-property: border-radius;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+
+    &:hover {
+      border-radius: 0px;
+    }
 
     &--moreReasons {
       color: $colorTitle;
