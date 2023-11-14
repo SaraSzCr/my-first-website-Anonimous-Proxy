@@ -2,8 +2,6 @@
   background-color: $colorTitle;
   // height: 100vh;
   width: 100vw;
-
-
 }
 
 .firstSection {
@@ -75,9 +73,11 @@
     "article2"
     "article3"
     "link";
+  text-align: center;
+  justify-items: center;
 
   &__title {
-    margin: 15px;
+    margin-top: 50px;
     grid-area: title;
 
     &--h2 {
@@ -106,18 +106,66 @@
       font-family: $fontTitle;
       font-size: $fontSizeMain;
       font-weight: $fontWeightTitle;
+      margin: 10px 70px;
     }
 
     &--paragraph {
       font-size: $fontSizeMain;
       font-family: $fontMain;
-      line-height: 2.5;
+      line-height: 1.5;
+      // width: 50vw;
+      margin: 5px 50px;
+    }
+  }
+  .secondSection__link {
+    border-radius: 25px;
+    background-color: $colorLink;
+    // padding: 20px;
+    width: 184px;
+    height: 45px;
+    margin: 15px;
+    display: grid;
+    align-items: center;
+
+    // display: grid;
+    // text-align: center;
+
+    &--moreReasons {
+      color: $colorTitle;
+
+      font-family: $fontMain;
+      font-size: 20px;
+      text-decoration: none;
     }
   }
 }
 
 // Tablet
 @media (min-width: 768px) and (max-width: 1280px) {
+  .firstSection {
+    padding-inline-start: 60px;
+    padding-inline-end: 60px;
+    display: flex;
+    justify-content: center;
+
+    // margin-top: 30px;
+
+    &__title {
+      margin: 15px;
+    }
+
+    &__title--mainTitle {
+      font-size: 26px;
+    }
+
+    &__paragraph {
+      font-size: 20px;
+    }
+
+    &__link {
+      width: 91px;
+    }
+  }
   .secondSection {
     height: 400px;
     display: grid;
@@ -130,9 +178,130 @@
       "link link link";
 
     &__title {
-      margin: 15px;
+      margin: 40px;
       grid-area: title;
+
+      &--h2 {
+        font-size: 26px;
+      }
     }
+    .secondSection__article {
+      &--title {
+        font-size: 24px;
+        // margin: 10px 70px;
+      }
+
+      &--paragraph {
+        font-size: 20px;
+      }
+      .article1 {
+        grid-area: article1;
+      }
+      .article2 {
+        grid-area: article2;
+      }
+      .article3 {
+        grid-area: article3;
+      }
+      &__link {
+        grid-area: link link link;
+      }
+    }
+    .secondSection__link {
+      // border-radius: 25px;
+      // background-color: $colorLink;
+      // padding: 20px;
+      width: 210px;
+      // height: 45px;
+      // margin: 15px;
+      // display: grid;
+      // align-items: center;
+
+      // // display: grid;
+      // // text-align: center;
+
+      &--moreReasons {
+        color: $colorTitle;
+
+        font-family: $fontMain;
+        font-size: 20px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+  // Desktop
+
+  @media (min-width: 1280px) {
+    .firstSection {
+      padding-left: 250px;
+      display: flex;
+      justify-content: center;
+
+      // margin-top: 30px;
+
+      &__title {
+        margin: 15px;
+
+        &--span {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+
+      &__title--mainTitle {
+        font-size: 32px;
+      }
+
+      &__paragraph {
+        width: 50vw;
+      }
+
+      &__link {
+        width: 160px;
+      }
+    }
+
+    .secondSection {
+      height: 400px;
+      display: grid;
+      text-align: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "title title title"
+        "article1 article2 article3"
+        "link link link";
+
+      &__link {
+        grid-area: link link link;
+      }
+
+      &__title {
+        margin: 40px;
+        grid-area: title;
+        font-size: 32px;
+
+        &--h2 {
+          font-size: 32px;
+        }
+      }
+    }
+
+    .secondSection__article {
+      &--title {
+        font-size: 24px;
+
+        // margin: 10px 70px;
+      }
+
+      &--paragraph {
+        font-size: 20px;
+      }
+    }
+    
     .article1 {
       grid-area: article1;
     }
@@ -142,40 +311,9 @@
     .article3 {
       grid-area: article3;
     }
-    &__link {
-      grid-area: link link link;
+
+    .secondSection__link {
+      width: 255px;
     }
   }
-}
 
-// Desktop
-@media (min-width: 1280px) {
-  .secondSection {
-    height: 400px;
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      "title title title"
-      "article1 article2 article3"
-      "link link link";
-
-    &__title {
-      margin: 15px;
-      grid-area: title;
-    }
-    .article1 {
-      grid-area: article1;
-    }
-    .article2 {
-      grid-area: article2;
-    }
-    .article3 {
-      grid-area: article3;
-    }
-    &__link {
-      grid-area: link link link;
-    }
-  }
-}
