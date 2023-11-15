@@ -23,9 +23,9 @@ http://beta.adalab.es/modulo-1-evaluacion-final-SaraSzCr/
 
 Esta guía te permite tener una copia del ejercicio y ejecutarlo
 
-#Nota# Necesitas tener instalado [Node JS] (https://nodejs.org/)
+**Nota** Necesitas tener instalado [Node JS] (https://nodejs.org/)
 
-### Pasos para ejecutar el ejercicio
+### Pasos para ejecutar el ejercicio 🐾
 
 Ejecuta estos comandos en la Terminal:
 
@@ -33,17 +33,17 @@ Ejecuta estos comandos en la Terminal:
    https://github.com/Adalab/modulo-1-evaluacion-final-SaraSzCr.git
 
 2. **Instala las _dependecias locales_**:
-   npm install
+   `npm install`
 
 3. **Arranca el proyecto**
-   npm run dev
+   `npm run dev`
 
-Este comando *Abre una ventana en el navegador y muestra la página web*
+Este comando ejecuta el entorno de desarrollo y muestra la página web en una pestaña del navegador.
 
-## Autores 👩🏻‍💻
+## Autora 👩🏻‍💻
 
-Sara Sanchez Crespo
+Sara Sánchez Crespo
 
-[Github]: https://github.com/SaraSzCr
-[Linkedin]: http://linkedin.com/in/sara-sanchez-crespo-b0538029a
-[email]: scresposara@gmail.com
+[Github] (https://github.com/SaraSzCr)
+[Linkedin] (http://linkedin.com/in/sara-sanchez-crespo-b0538029a)
+[email] (scresposara@gmail.com)
