@@ -1,10 +1,10 @@
-# Evaluación final Modulo 1 Adalab 💻
+# ANONIMOUS PROXY 
 
-En este ejercicio se demuestran los conocimientos adquiridos durante el primer módulo del Bootcamp de Programación Web de Adalab.[Adalab](https://adalab.es)
-El ejercicio consiste en maquetar una página web basándome en un diseño predeterminado para llevar a cabo el proyecto [Zeplin] (https://app.zeplin.io/project/5c8ff9170ffc6f2525b2790c/screen/5c8ff94561942d0ddc54241c). Esta página web está maquetada en Mobile first, con un diseño responsive que se adapta a diferentes dispositivos como Tablet y Desktop.
-Para realizar el ejercicio he utilizado la plantilla de proyecto Starter Kit de Adalab, creada en node y vite.
+Maquetación de una página web estática basándome en un diseño predeterminado para llevar a cabo el proyecto [Zeplin] (https://app.zeplin.io/project/5c8ff9170ffc6f2525b2790c/screen/5c8ff94561942d0ddc54241c) proporcionado por [Adalab](https://adalab.es) . 
+Esta página web está maquetada en Mobile first, con un diseño responsive que se adapta a diferentes dispositivos como Tablet y Desktop.
 
-En este ejercicio he utilizado las siguientes tecnologías:
+
+### Tecnologías utilizadas 🛠️
 
 - HTML
 - Sass
@@ -17,9 +17,9 @@ En este ejercicio he utilizado las siguientes tecnologías:
 
 ### Link de GitHub Pages 🔗
 
-http://beta.adalab.es/modulo-1-evaluacion-final-SaraSzCr/
+http://saraszcr.github.io/my-first-website-Anonimous-Proxy/
 
-## Guía de incio rápido 📖
+## Guía rápida de inicio 🚀
 
 Esta guía te permite tener una copia del ejercicio y ejecutarlo
 
@@ -27,23 +27,29 @@ Esta guía te permite tener una copia del ejercicio y ejecutarlo
 
 ### Pasos para ejecutar el ejercicio 🐾
 
-Ejecuta estos comandos en la Terminal:
+_Ejecuta estos comandos en la Terminal_:
 
 1. **Clona el repositorio**:
-   https://github.com/Adalab/modulo-1-evaluacion-final-SaraSzCr.git
+```
+   https://github.com/SaraSzCr/my-first-website-Anonimous-Proxy.git
+   ```
 
 2. **Instala las _dependecias locales_**:
-   `npm install`
+```
+   npm install
+   ```
 
 3. **Arranca el proyecto**
-   `npm run dev`
+```
+   npm run dev
+   ```
 
-Este comando ejecuta el entorno de desarrollo y muestra la página web en una pestaña del navegador.
+Este comando: **Abre automáticamente una ventana en el navegador y muestra la página web**
 
 ## Autora 👩🏻‍💻
 
 Sara Sánchez Crespo
 
 [Github] (https://github.com/SaraSzCr)
-[Linkedin] (http://linkedin.com/in/sara-sanchez-crespo-b0538029a)
+[Linkedin] (www.linkedin.com/in/sara-sanchez-crespo)
 [email] (scresposara@gmail.com)
